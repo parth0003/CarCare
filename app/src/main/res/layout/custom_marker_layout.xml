@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_marker_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_dp"
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/p1"
+        android:contentDescription="@null"
+        app:civ_border_color="#fff" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_toEndOf="@+id/user_dp"
+        android:layout_toRightOf="@+id/user_dp"
+        android:backgroundTint="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="janet John"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="janet John"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:visibility="visible" />
+        <RatingBar
+            android:theme="@style/RatingBar"
+            android:rating="3"
+            android:id="@+id/vendor_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall"
+            android:numStars="5"
+            android:layout_below="@+id/title"
+            android:layout_marginLeft="10dp"
+            android:stepSize="0.1"
+            android:isIndicator="true" />
+<!--        <com.willy.ratingbar.ScaleRatingBar-->
+<!--            android:layout_below="@+id/title"-->
+<!--            android:id="@+id/simpleRatingBar"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:srb_numStars="5"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            app:srb_minimumStars="1"-->
+<!--            app:srb_rating="3"-->
+<!--            app:srb_starWidth="15dp"-->
+<!--            app:srb_starHeight="15dp"-->
+<!--            app:srb_starPadding="1dp"-->
+<!--            app:srb_stepSize="0.5"-->
+<!--            app:srb_isIndicator="false"-->
+<!--            app:srb_clickable="true"-->
+<!--            app:srb_scrollable="true"-->
+<!--            app:srb_clearRatingEnabled="true"-->
+<!--            app:srb_drawableEmpty="@drawable/empty"-->
+<!--            app:srb_drawableFilled="@drawable/filled">-->
+<!--        </com.willy.ratingbar.ScaleRatingBar>-->
+    </RelativeLayout>
+</RelativeLayout>
